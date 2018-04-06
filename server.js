@@ -7,7 +7,8 @@ var db = require('./db');
 var argv = require('optimist').argv;
 var app = require('./app')(flights, db);
 
-var port = normalizePort(process.env.PORT || '3000');
+// var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(process.env.PORT || '8080');
 app.set('port', port);
 
 
